@@ -1,0 +1,21 @@
+﻿<Window
+    x:Class="SecurityPlus.ChangeCost"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SecurityPlus"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+    Title="ChangeCost"
+    Width="320"
+    Height="150"
+    mc:Ignorable="d">
+    <StackPanel Width="300" VerticalAlignment="Center">
+        <TextBox Name="TbInCar" md:HintAssist.Hint="Стоимость на своей машине" />
+        <TextBox Name="TbNoCar" md:HintAssist.Hint="Стоимость не на своей машине" />
+        <Button
+            Click="ButtonBase_OnClick"
+            Content="Сохранить"
+            Foreground="White" />
+    </StackPanel>
+</Window>
